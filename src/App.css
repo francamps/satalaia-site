@@ -21,6 +21,7 @@ body {
     width: 100%;
     padding: 16px;
     display: flex;
+    box-sizing: border-box;
 }
 
 .App-header svg {
@@ -42,6 +43,7 @@ body {
     bottom: 0;
     display: flex;
     align-items: flex-end;
+    box-sizing: border-box;
 }
 
 .App-content .banner {
@@ -80,6 +82,21 @@ body {
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@media (max-width: 760px) {
+    .App-content {
+        align-items: center;
+    }
+
+    .App-content .banner {
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: left;
+        padding: 0 0 48px 16px;
+        line-height: 4rem;
+        color: #000;
     }
 }
 
