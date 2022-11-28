@@ -1,0 +1,64 @@
+.App-header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.App-header h2 {
+    font-weight: 500;
+    margin: 0;
+    color: #000;
+    padding: 0 8px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.App-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.App-contact {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.App-contact p {
+    border: 1px solid #000;
+    padding: 8px;
+    border-radius: 16px;
+    transition: color 200ms;
+    cursor: pointer;
+}
+
+.App-contact p:hover {
+    background-color: #fc8028;
+    transition: background-color 200ms;
+}
+
+@media (max-width: 760px) {
+    .App-contact {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-header .logo {
+        /* animation: App-logo-spin infinite 20s linear; */
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

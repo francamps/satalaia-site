@@ -1,11 +1,22 @@
+@import url("styles/fonts.css");
+
 html,
 body {
-    background: linear-gradient(135deg, #fccca2 25%, transparent 15%),
-        linear-gradient(225deg, #fccca2 25%, transparent 15%),
-        linear-gradient(315deg, #fccca2 25%, transparent 15%),
-        linear-gradient(45deg, #fccca2 25%, transparent 95%);
-    background-size: 20px 20px;
-    background-color: #fc8028;
+    /*background: linear-gradient(135deg, #fccca2 0%, #fc8028 100%);*/
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    /*background-size: 20px 20px;*/
+    width: 100vw;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: GTSuperDisplayTrial;
 }
 
 .App {
@@ -15,26 +26,6 @@ body {
 .App-logo {
     height: 40vmin;
     pointer-events: none;
-}
-
-.App-header {
-    width: 100%;
-    padding: 16px;
-    display: flex;
-    box-sizing: border-box;
-}
-
-.App-header svg {
-    border: 1px solid #000;
-    border-radius: 8px;
-}
-
-.App-header h2 {
-    margin: 0;
-    color: #000;
-    padding: 0 8px;
-    display: flex;
-    align-items: flex-end;
 }
 
 .App-content {
@@ -47,68 +38,41 @@ body {
 }
 
 .App-content .banner {
+    font-family: GTSuperDisplayTrial;
+    font-weight: 900;
     font-size: 12rem;
-    font-weight: bold;
     text-align: left;
     padding: 0 0 48px 16px;
     line-height: 10rem;
     color: #000;
 }
 
-.App-contact {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-}
-
-.App-contact p {
-    margin: 16px 16px 0 0;
-    border: 1px solid #000;
-    padding: 8px;
-    border-radius: 16px;
-    transition: color 200ms;
-    cursor: pointer;
-}
-
-.App-contact p:hover {
-    background-color: #fc8028;
-    transition: background-color 200ms;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.App-content .App-contact {
+    display: none;
 }
 
 @media (max-width: 760px) {
     .App-content {
-        align-items: center;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .App-content .banner {
         font-size: 5rem;
         font-weight: bold;
         text-align: left;
-        padding: 0 0 48px 16px;
-        line-height: 4rem;
+        padding: 0 0 0 16px;
+        line-height: 4.5rem;
         color: #000;
+    }
+
+    .App-content .App-contact {
+        display: inline-block;
+        margin-left: 16px;
     }
 }
 
 .App-link {
     color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
