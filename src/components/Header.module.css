@@ -1,0 +1,43 @@
+.header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    font-weight: 500;
+    margin: 0;
+    color: #000;
+    padding: 0 var(--space-16);
+    display: flex;
+    align-items: flex-end;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    border-radius: var(--space-4);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .header .logo {
+        /* animation: App-logo-spin infinite 20s linear; */
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

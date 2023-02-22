@@ -1,0 +1,29 @@
+.canvas {
+    position: fixed;
+    top: 0;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.canvas canvas {
+    position: absolute;
+    top: -110px;
+}
+
+.canvas h2 {
+    position: absolute;
+    top: 100px;
+    font-weight: 900;
+}
+
+.canvas h4 {
+    position: absolute;
+    font-weight: 300;
+    top: 130px;
+}

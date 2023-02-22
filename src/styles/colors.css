@@ -1,0 +1,7 @@
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-orange: 228, 53, 26;
+    --clr-fluo: #00ff4a;
+    --clr-primary: var(--clr-orange);
+}
