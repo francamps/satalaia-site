@@ -7,7 +7,7 @@ import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass.js";
 import { FXAAShader } from "three/examples/jsm/shaders/FXAAShader.js";
-import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
+//import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
 
 import { CustomOutlinePass } from "@/assets/threejs/addons/CustomOutlinePass.js";
 import FindSurfaces from "@/assets/threejs/addons/FindSurfaces.js";
@@ -64,6 +64,7 @@ const Canvas = () => {
             // Set up post processing
             // Create a render target that holds a depthTexture so we can use it in the outline pass
             // See: https://threejs.org/docs/index.html#api/en/renderers/WebGLRenderTarget.depthBuffer
+            // @ts-expect-error
             const depthTexture = new THREE.DepthTexture();
             const renderTarget = new THREE.WebGLRenderTarget(width, height, {
                 depthTexture: depthTexture,
@@ -108,6 +109,7 @@ const Canvas = () => {
                         if (node.type == "Mesh") {
                             const colorsTypedArray =
                                 surfaceFinder.getSurfaceIdAttribute(node);
+                            // @ts-expect-error
                             node.geometry.setAttribute(
                                 "color",
                                 new THREE.BufferAttribute(colorsTypedArray, 4)
@@ -150,14 +152,19 @@ const Canvas = () => {
             cameraRef.current.aspect = window.innerWidth / window.innerHeight;
             cameraRef.current.updateProjectionMatrix();
 
+            // @ts-expect-error
             renderer.setSize(window.innerWidth, window.innerHeight);
             composerRef.current.setSize(window.innerWidth, window.innerHeight);
+            // @ts-expect-error
             effectFXAA.setSize(window.innerWidth, window.innerHeight);
+            // @ts-expect-error
             customOutline.setSize(window.innerWidth, window.innerHeight);
 
+            // @ts-expect-error
             renderer.setPixelRatio(window.devicePixelRatio);
             composerRef.current.setPixelRatio(window.devicePixelRatio);
 
+            // @ts-expect-error
             effectFXAA.uniforms["resolution"].value.set(
                 1 / window.innerWidth,
                 1 / window.innerHeight
