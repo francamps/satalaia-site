@@ -1,68 +1,72 @@
 .content {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: var(--space-16);
-    overflow: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: auto;
+  max-width: 800px;
 }
 
 .content .section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .content .lead span {
-    font-family: GTSuperDisplayTrial;
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .content .lead {
-    font-family: "Iosevka";
-    font-size: 1.4rem;
-    font-weight: 300;
-    text-align: left;
-    margin: 0;
-    margin-top: var(--space-16);
+  font-family: "Iosevka";
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-align: left;
+  margin: 0;
+  margin-top: var(--space-16);
 }
 
 .content .lead p {
-    margin: 0;
-    background: var(--clr-white);
-    width: fit-content;
-    padding: 0;
+  margin: 0;
+  background: var(--clr-white);
+  width: fit-content;
+  padding: 0px 4px;
 }
 
 .content .experience {
-    font-family: "Iosevka";
-    font-size: 1.2rem;
-    font-weight: 300;
-    max-width: 400px;
+  font-family: "Iosevka";
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 400px;
 }
 
 .content .experience p {
-    background: var(--clr-white);
-    width: fit-content;
-    padding: 0;
+  background: var(--clr-white);
+  width: fit-content;
+  padding: 0px 4px;
 }
 
 @media (max-width: 760px) {
-    .content {
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-    }
+  .content {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+  }
 
-    .content .banner {
-        font-size: 5rem;
-        font-weight: bold;
-        text-align: left;
-        padding: 0 0 0 16px;
-        line-height: 4.5rem;
-        color: #000;
-    }
+  .content .banner {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 0 0 0 16px;
+    line-height: 4.5rem;
+    color: #000;
+  }
+
+  .content .lead {
+    font-size: 1.4rem;
+  }
 }

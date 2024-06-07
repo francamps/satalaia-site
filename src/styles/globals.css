@@ -4,27 +4,27 @@
 
 html,
 body {
-    /*background: linear-gradient(135deg, #ffecd2 0%, var(--clr-primary) 100%);*/
-    background: linear-gradient(
-        135deg,
-        var(--clr-fluo) 0%,
-        var(--clr-fluo) 80%,
-        #ffecd2 110%
-    );
-    /*background-size: 20px 20px;*/
-    width: 100vw;
-    height: 100vh;
+  /*background: linear-gradient(135deg, #ffecd2 0%, var(--clr-primary) 100%);*/
+  background: linear-gradient(
+    135deg,
+    var(--clr-fluo) 0%,
+    var(--clr-fluo) 80%,
+    #ffecd2 110%
+  );
+  /*background-size: 20px 20px;*/
+  width: 100vw;
+  height: 100vh;
 
-    margin: 0;
-    font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-        "Droid Sans", "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 h1,
@@ -33,23 +33,23 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    font-family: GTSuperDisplayTrial;
+  margin: 0;
+  font-family: "Iosevka";
 }
 
 ::selection {
-    background: var(--clr-white);
+  background: var(--clr-white);
 }
 
 .App {
-    text-align: center;
+  text-align: center;
 }
 
 .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+  height: 40vmin;
+  pointer-events: none;
 }
 
 .App-link {
-    color: #61dafb;
+  color: #61dafb;
 }

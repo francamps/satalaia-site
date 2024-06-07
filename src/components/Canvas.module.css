@@ -1,29 +1,32 @@
 .canvas {
-    position: fixed;
-    top: 0;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-    width: 100%;
-    left: 0;
-    right: 0;
+  position: fixed;
+  top: -40px;
+  right: -550px;
+  height: 200px;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  z-index: 10;
 }
 
 .canvas canvas {
-    position: absolute;
-    top: -110px;
+  position: absolute;
 }
 
 .canvas h2 {
-    position: absolute;
-    top: 100px;
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .canvas h4 {
-    position: absolute;
-    font-weight: 300;
-    top: 130px;
+  font-weight: 300;
+}
+
+.canvas .title {
+  display: "flex";
+}
+
+@media (max-width: 760px) {
+  .canvas {
+    right: -100px;
+  }
 }
