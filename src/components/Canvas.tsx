@@ -24,8 +24,8 @@ const Canvas = () => {
   const height = 300; //window.innerHeight;
   const scene = new THREE.Scene();
   const renderer = useRef<THREE.WebGLRenderer>();
-  const effectFXAA = useRef();
-  const customOutline = useRef();
+  const effectFXAA = useRef({});
+  const customOutline = useRef({});
 
   //Add Renderer
   useEffect(() => {
@@ -89,7 +89,8 @@ const Canvas = () => {
 
       // Antialias pass.
       effectFXAA.current = new ShaderPass(FXAAShader);
-      effectFXAA.current?.uniforms["resolution"].value.set(
+      // @ts-expect-error
+      effectFXAA.current?.uniforms?.resolution?.value.set(
         1 / width,
         1 / height
       );
@@ -123,6 +124,7 @@ const Canvas = () => {
             }
           });
 
+          // @ts-expect-error
           customOutline.current.updateMaxSurfaceId(surfaceFinder.surfaceId + 1);
         }
       );
