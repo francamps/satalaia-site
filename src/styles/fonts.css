@@ -1,77 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
 @font-face {
-    font-family: Iosevka;
-    font-weight: 100;
-    src: url("../assets/fonts/iosevka-thin.ttf");
+  font-family: Iosevka;
+  font-weight: 100;
+  src: url("/_next/static/fonts/iosevka-thin.ttf");
 }
 @font-face {
-    font-family: Iosevka;
-    font-weight: 300;
-    src: url("../assets/fonts/iosevka-light.ttf");
+  font-family: Iosevka;
+  font-weight: 300;
+  src: url("/_next/static/fonts/iosevka-light.ttf");
 }
 @font-face {
-    font-family: Iosevka;
-    font-weight: 500;
-    src: url("../assets/fonts/iosevka-regular.ttf");
+  font-family: Iosevka;
+  font-weight: 500;
+  src: url("/_next/static/fonts/iosevka-regular.ttf");
 }
 @font-face {
-    font-family: Iosevka;
-    font-weight: 600;
-    src: url("../assets/fonts/iosevka-medium.ttf");
+  font-family: Iosevka;
+  font-weight: 600;
+  src: url("/_next/static/fonts/iosevka-medium.ttf");
 }
 @font-face {
-    font-family: Iosevka;
-    font-weight: 700;
-    src: url("../assets/fonts/iosevka-semibold.ttf");
+  font-family: Iosevka;
+  font-weight: 700;
+  src: url("/_next/static/fonts/iosevka-semibold.ttf");
 }
 @font-face {
-    font-family: Iosevka;
-    font-weight: 800;
-    src: url("../assets/fonts/iosevka-bold.ttf");
+  font-family: Iosevka;
+  font-weight: 800;
+  src: url("/_next/static/fonts/iosevka-bold.ttf");
 }
 @font-face {
-    font-family: Iosevka;
-    font-weight: 900;
-    src: url("../assets/fonts/iosevka-extrabold.ttf");
-}
-
-@font-face {
-    font-family: GTSuperDisplayTrial;
-    font-weight: 100;
-    src: url("../assets/fonts/GT-Super-Display-Trial-Light.otf")
-        format("opentype");
+  font-family: Iosevka;
+  font-weight: 900;
+  src: url("/_next/static/fonts/iosevka-extrabold.ttf");
 }
 
 @font-face {
-    font-family: GTSuperDisplayTrial;
-    font-weight: 300;
-    src: url("../assets/fonts/GT-Super-Display-Trial-Regular.otf")
-        format("opentype");
+  font-family: GTSuperDisplayTrial;
+  font-weight: 100;
+  src: url("/_next/static/fonts/GT-Super-Display-Trial-Light.otf")
+    format("opentype");
 }
 
 @font-face {
-    font-family: GTSuperDisplayTrial;
-    font-weight: 500;
-    src: url("../assets/fonts/GT-Super-Display-Trial-Medium.otf")
-        format("opentype");
+  font-family: GTSuperDisplayTrial;
+  font-weight: 300;
+  src: url("/_next/static/fonts/GT-Super-Display-Trial-Regular.otf")
+    format("opentype");
 }
 
 @font-face {
-    font-family: GTSuperDisplayTrial;
-    font-weight: 700;
-    src: url("../assets/fonts/GT-Super-Display-Trial-Bold.otf")
-        format("opentype");
+  font-family: GTSuperDisplayTrial;
+  font-weight: 500;
+  src: url("/_next/static/fonts/GT-Super-Display-Trial-Medium.otf")
+    format("opentype");
 }
 
 @font-face {
-    font-family: GTSuperDisplayTrial;
-    font-weight: 900;
-    src: url("../assets/fonts/GT-Super-Display-Trial-Super.otf")
-        format("opentype");
+  font-family: GTSuperDisplayTrial;
+  font-weight: 700;
+  src: url("/_next/static/fonts/GT-Super-Display-Trial-Bold.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: GTSuperDisplayTrial;
+  font-weight: 900;
+  src: url("/_next/static/fonts/GT-Super-Display-Trial-Super.otf")
+    format("opentype");
 }
 
 :root {
-    --font-body: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-        "Droid Sans", "Helvetica Neue", sans-serif;
+  --font-body: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
 }
